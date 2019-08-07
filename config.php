@@ -1,6 +1,6 @@
 <?php
 	//建立資料庫連線PHP
-	$dbhost = 'localhost';
+	$dbhost = '127.0.0.1';
 	$dbuser = 'root';
 	$dbpass = '';
 	$dbname = 'homeworkphp';

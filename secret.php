@@ -8,9 +8,9 @@
   }
 
   require ("config.php");
-  $sql = "SELECT cPicture,cName,cPrice,cid FROM commodity";
+  $sql = "SELECT * FROM commodity";
 	$result = mysqli_query($link,$sql);
-  $row = mysqli_fetch_row($result);
+  //$row = mysqli_fetch_row($result);
   
   //echo var_dump($row);
 
@@ -34,15 +34,15 @@
     <td align="center" bgcolor="#CCCCCC"><a href="index.php">回首頁</a></td>
   </tr>
 </table>
-<?php while($row = mysqli_fetch_row($result)) {?>
+<?php while($row = mysqli_fetch_array($result)) {?>
   <div style="display:inline-block;margin-left:5%;margin-top:10%;border-width:3px;border-style:dashed;border-color:#FFAC55;">
-  <img src="image/<?php echo $row[0] ?>" class="employee-pic" width="100" />
-  <h3>商品名稱: <?php echo $row[1] ?></h3>
-  <p>商品售價: <?php echo $row[2] ?>元</p>
+  <img src="image/<?php echo$row['cPicture'] ?>" class="employee-pic" width="100" />
+  <h3>商品名稱: <?php echo $row["cName"] ?></h3>
+  <p>商品售價: <?php echo $row["cPrice"] ?>元</p>
   <input id="num" type="number" size="10px">
   <input id="item" class="product_bt" style="cursor: pointer;" 
-    onclick="location='shoppage.php';"
-    value="加入購物車" type="submit" />
+    onclick="location='shoppage.php?nb=<?= $row['cid'] ?>&cName=<?= $row['cName']?>';"
+    value="加入購物車" type="button" />
 </div>
 <?php } ?>
 
