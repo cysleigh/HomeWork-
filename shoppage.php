@@ -5,7 +5,7 @@ require_once("secret.php");
 $nb=$_GET["nb"]; //商品編號
 $cName=$_GET["cName"]; //商品名稱
 $arr=$_SESSION["mycar"];
-session_start();
+
 if(is_array($arr)){
     if(array_key_exists($nb,$arr)){
      //1、array_key_exists($pid,$arr)判斷$arr中是否存在鍵值為$pid的一個一維陣列,如果存在的話,就說明此商品以前購買過,只需要把數量加1
