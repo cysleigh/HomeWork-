@@ -27,7 +27,7 @@
     <?php }else{ ?>
       <a href="login.php?signout=1">登出</a>
     <?php } ?>
-    | <a href="secret.php">查看購物車清單</a>
+    | <a href="cart.php">查看購物車清單</a>
     | <a href="secret.php">會員購買專用頁</a>
   
   </td>
