@@ -18,5 +18,5 @@ require ("config.php");
 ?>
 </table>
 <div>
-<a href="index.php" rel="external nofollow" rel="external nofollow" >檢視購物車</a> 
+<a href="index.php" rel="external nofollow" rel="external nofollow" >回首頁</a> 
 <a href="secret.php" rel="external nofollow" rel="external nofollow" >瀏覽商品</a> 

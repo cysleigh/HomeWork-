@@ -2,6 +2,7 @@
   session_start();
   require ("config.php");
   $userName = 'Guest';
+  
   if(isset($_SESSION["userName"])){
     $userName = $_SESSION["userName"];
   }
