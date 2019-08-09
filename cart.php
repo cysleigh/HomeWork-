@@ -17,12 +17,6 @@
 		$total = ($row["cPrice"])*$value;
 		echo "商品名稱=".$key."數量=".$value."單品價格=".$row["cPrice"]."總價為=".$total."<br>";
 	}
-		
-		
-	
-  	
-
-
 
 ?>
 	<input type="submit" value="返回" οnclick="location='index.php';" />
