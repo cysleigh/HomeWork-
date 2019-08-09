@@ -39,11 +39,16 @@
   <img src="image/<?php echo$row['cPicture'] ?>" class="employee-pic" width="100" />
   <h3>商品名稱: <?php echo $row["cName"] ?></h3>
   <p>商品售價: <?php echo $row["cPrice"] ?>元</p>
+  <!-- <form action="" method="get">
+  <input name= "amount" type="number" > -->
   <!-- <input id="item" class="product_bt" style="cursor: pointer;" 
     onclick="location='shoppage.php?nb=<?= $row['cid'] ?>&cName=<?= $row['cName']?>';"
-    value="加入購物車" type="button" /> -->
-    <a href="shoppage.php?nb=<?= $row['cid'] ?>&cName=<?= $row['cName']?>">加入購物車</a>
-</div>
+    value="加入購物車" type="submit" /> -->
+  <a href="shoppage.php?nb=<?= $row['cid'] ?>&cName=<?= $row['cName']?>&num=1">加入購物車</a>
+  <!-- </form> -->
+ 
+    
+  </div>
 <?php } ?>
 
 </body>
