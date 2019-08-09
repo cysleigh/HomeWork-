@@ -4,6 +4,9 @@ session_start();
 //選擇登出加上signout判斷
 if(isset($_GET["signout"])){
 	unset($_SESSION["userName"]);
+	if(isset($_SESSION["cart"])){ //若有購物車session 在登出後清除session
+		unset($_SESSION["cart"]);
+	}
 	//session_destroy();
 	header("Location: index.php");
 	exit();
@@ -68,8 +71,7 @@ if (isset($_POST["btnOK"]))
 			</tr>
 			<tr>
 				<td colspan="2" align="center" bgcolor="#CCCCCC"><input
-					type="submit" name="btnOK" id="btnOK" value="登入" /> <input
-					type="reset" name="btnReset" id="btnReset" value="重設" /> <input
+					type="submit" name="btnOK" id="btnOK" value="登入" /><input
 					type="submit" name="btnHome" id="btnHome" value="回首頁" />
 				</td>
 			</tr>

@@ -33,7 +33,7 @@
   <tr>
     <td align="center" bgcolor="#CCCCCC">
       <a href="index.php">回首頁</a>
-      <a href="index.php">回首頁</a>
+      <a href="cart.php">查看購物車</a>
     </td>
     
   </tr>
