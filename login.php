@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+//帳號/密碼:demo/demo
 //選擇登出加上signout判斷
 if(isset($_GET["signout"])){
 	unset($_SESSION["userName"]);

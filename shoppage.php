@@ -14,6 +14,7 @@ if (!isset($_SESSION["userName"]))
 if(!isset($_SESSION['cart'])){	//查看是否有購物車session
     $_SESSION['cart'] = array();
 }
+
 if(isset($_GET['nb'])){		
 	array_push($_SESSION['cart'],$_GET["cName"]);
 }
