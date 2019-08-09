@@ -31,7 +31,11 @@
     <td align="center" valign="baseline">Welcom!! <?= $_SESSION["userName"]?></td>
   </tr>
   <tr>
-    <td align="center" bgcolor="#CCCCCC"><a href="index.php">回首頁</a></td>
+    <td align="center" bgcolor="#CCCCCC">
+      <a href="index.php">回首頁</a>
+      <a href="index.php">回首頁</a>
+    </td>
+    
   </tr>
 </table>
 <?php while($row = mysqli_fetch_array($result)) {?>
