@@ -11,7 +11,6 @@
   $sql = "SELECT * FROM commodity";
 	$result = mysqli_query($link,$sql);
   //$row = mysqli_fetch_row($result);
-  
   //echo var_dump($row);
 
 ?>
